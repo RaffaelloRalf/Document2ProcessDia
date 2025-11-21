@@ -1,0 +1,22 @@
+flowchart TD
+    1(["Process Start"])
+    2["Create Purchase Requisition"]
+    3{{"Value Check"}}
+    4["Manager Checks Requisition"]
+    5{{"Manager Approval Decision"}}
+    6["Automatic Approval"]
+    7["Create Purchase Order"]
+    8["Send Confirmation"]
+    9(["Process End (Rejected)"])
+    10(["Process End (Complete)"])
+
+    1 --> 2
+    2 --> 3
+    3 -- "Value > 10,000 EUR" --> 4
+    3 -- "Value <= 10,000 EUR" --> 6
+    4 --> 5
+    5 -- "Rejected" --> 9
+    5 -- "Approved" --> 7
+    6 --> 7
+    7 --> 8
+    8 --> 10

@@ -1,0 +1,58 @@
+# Sample Process Description
+# Bestellanforderungsprozess (Purchase Requisition Process)
+
+## Übersicht
+Dieser Prozess beschreibt die Schritte zur Erstellung und Genehmigung von Bestellanforderungen.
+
+## Beteiligte Rollen
+- Antragsteller (Requestor)
+- Manager
+- Einkaufsabteilung (Purchasing)
+
+## Prozessschritte
+
+### 1. Start
+Der Prozess beginnt, wenn ein Mitarbeiter einen Bedarf identifiziert.
+
+### 2. Bestellanforderung erstellen
+Der Antragsteller erstellt eine Bestellanforderung im System mit:
+- Artikelbeschreibung
+- Menge
+- Geschätzter Wert
+- Begründung
+
+### 3. Wertprüfung
+Das System prüft automatisch den Gesamtwert der Bestellung.
+
+**Entscheidung**: Ist der Wert größer als 10.000 EUR?
+
+#### Fall A: Wert > 10.000 EUR (Ja-Pfad)
+- Anforderung wird an Manager zur Genehmigung weitergeleitet
+- Manager prüft Begründung und Budget
+- Manager genehmigt oder lehnt ab
+
+Falls abgelehnt: Prozess endet (mit Benachrichtigung an Antragsteller)
+Falls genehmigt: Weiter zu Schritt 4
+
+#### Fall B: Wert ≤ 10.000 EUR (Nein-Pfad)
+- Automatische Genehmigung
+- Direkt weiter zu Schritt 4
+
+### 4. Purchase Order erstellen
+Die Einkaufsabteilung erstellt eine offizielle Purchase Order (PO):
+- PO-Nummer wird generiert
+- Lieferant wird ausgewählt
+- Bestellung wird an Lieferant gesendet
+
+### 5. Bestätigung
+System sendet Bestätigung an Antragsteller mit PO-Nummer.
+
+### 6. Ende
+Prozess ist abgeschlossen.
+
+---
+
+## Zusatzinformationen
+- Durchschnittliche Durchlaufzeit: 2-5 Tage
+- System: SAP Ariba
+- Eskalation bei Ablehnung: Möglich über Help Desk
