@@ -20,7 +20,6 @@ def create_approval_agent() -> LlmAgent:
     agent = LlmAgent(
         name="ApprovalAgent",
         model=config.MODEL_FLASH_THINKING,
-        # HIER IST DER FIX: Kontext-Variable {approval_status?} nutzen!
         instruction=(
             "You are the Quality Gatekeeper.\n\n"
             "CURRENT STATUS: {approval_status?}\n\n"

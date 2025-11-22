@@ -6,7 +6,7 @@ from .bpmn_generation_agent import create_bpmn_generation_agent
 from .validation_agent import create_validation_agent
 from .system_evaluator_agent import create_system_evaluator_agent
 from .publication_agent import create_publication_agent
-from .approval_agent import create_approval_agent  # <--- NEU
+from .approval_agent import create_approval_agent  
 
 __all__ = [
     "create_pdf_text_extraction_agent",
@@ -17,5 +17,5 @@ __all__ = [
     "create_validation_agent",
     "create_system_evaluator_agent",
     "create_publication_agent",
-    "create_approval_agent"  # <--- NEU
+    "create_approval_agent"  
 ]

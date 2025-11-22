@@ -9,10 +9,10 @@ google-genai>=1.0.0
 google-generativeai>=0.8.0
 
 # =============================================================================
-# Data Validation & Parsing (WICHTIG: Das fehlte!)
+# Data Validation & Parsing 
 # =============================================================================
-pydantic>=2.0.0     # Wird von fast allen deinen Agenten genutzt
-PyPDF2>=3.0.0       # Wird von tools/pdf_parser.py genutzt
+pydantic>=2.0.0     
+PyPDF2>=3.0.0       
 
 # =============================================================================
 # Environment Management
@@ -23,7 +23,7 @@ python-dotenv==1.0.0
 # Optional: Better Logging & Utilities
 # =============================================================================
 colorlog==6.8.0
-reportlab           # Hilfreich, um Test-PDFs zu generieren (wie vorhin gemacht)
+reportlab          
 
 # =============================================================================
 # Development
