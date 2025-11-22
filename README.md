@@ -2,11 +2,9 @@
 
 ![Hero Image](/images/hero.png)
 
-## 🚀 Overview: Enterprise Agent Track Submission
+## 🚀 Overview: 
 
-This project, the **Process Analysis Agent**, is a highly automated multi-agent system designed to streamline core business documentation. It instantly converts unstructured text—such as process descriptions from standard operating procedures (SOPs) or internal memos—into formal, visual Mermaid flowcharts.
-
-This agent is submitted in the **Enterprise Agents** track, focusing on automating complex business workflows and improving data analysis.
+This project (prototype), the **Process Analysis Agent**, is an automated multi-agent system designed to streamline core business documentation. It instantly converts unstructured text—such as process descriptions from standard operating procedures (SOPs) or internal memos—into formal, visual Mermaid flowcharts.
 
 ---
 
@@ -32,7 +30,7 @@ This agent drastically reduces the time required for process visualization from 
 
 ### 1. Agent Architecture (Sequential and Collaborative)
 
-The system uses a highly modular design with a **SequentialAgent** as the root orchestrator. Data is passed between agents using the shared **Session State**.
+The system uses a modular design with a **SequentialAgent** as the root orchestrator. Data is passed between agents using the shared **Session State**.
 
 #### A. Architecture Diagram
 The architecture follows a strict, deterministic sequence:
